@@ -9,7 +9,6 @@
     $http.get(`${server}/articles`)
     .then(function(response){
       self.articles = response.data;
-      console.log(self.doctors[0].name);
     });
 
 
