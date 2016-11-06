@@ -1,0 +1,24 @@
+{
+  "name": "learncrispr_front",
+  "version": "1.0.0",
+  "description": "Learn CRISPR angular front end",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adammpolak/learncrispr_front.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/adammpolak/learncrispr_front/issues"
+  },
+  "homepage": "https://github.com/adammpolak/learncrispr_front#readme",
+  "dependencies": {
+    "express": "^4.14.0",
+    "path": "^0.12.7"
+  }
+}
