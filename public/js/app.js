@@ -1,5 +1,5 @@
 (function(){
-  angular.module('LearnCRISPR', ['ui.router']).config(MainRouter);
+  angular.module('learnCRISPR', ['ui.router']).config(MainRouter);
   MainRouter.$inject = ['$stateProvider', '$urlRouterProvider', '$locationProvider'];
   function MainRouter($stateProvider, $urlRouterProvider, $locationProvider) {
     $stateProvider
