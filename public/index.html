@@ -9,10 +9,11 @@
     <script src="js/router.js" charset="utf-8"></script>
     <script src="js/app.js" charset="utf-8"></script>
   </head>
-  <body ng-controller='articlesController as articles'>
+  <body>
     <header>
-      <nav>
-
+      <nav ng-controller="AuthCtrl as auth">
+        <a ui-sref='articles'>Articles</a>
+        <button ng-click='auth.logout()' ng-show='auth.loggedIn'>logout</button>
       </nav>
     </header>
     <main ui-view>

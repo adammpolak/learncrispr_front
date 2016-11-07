@@ -1,0 +1,18 @@
+<h2>Add New Article</h2>
+
+<form class="newArticleForm" ng-submit='articles.addArticle(newArticle)'>
+
+  <label for="title">Title: </label>
+  <input type="text" name="title" placeholder="type title here" ng-model='newArticle.title'>
+
+  <label for="description">Description: </label>
+  <input type="text" name="description" placeholder="type description here" ng-model='newArticle.description'>
+
+  <label for="abstract">Abstract: </label>
+  <input type="text" name="abstract" placeholder="paste abstract here" ng-model='newArticle.abstract'>
+
+  <label for="article url">Article Url: </label>
+  <input type="text" name="article url" placeholder="put article url here" ng-model='newArticle.article_url'>
+
+  <button type="submit">Add Article</button>
+</form>

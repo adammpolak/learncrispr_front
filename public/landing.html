@@ -1,17 +1,17 @@
 <div class="">
-  <form class="register" ng-submit='auth.register(userPass)'>
+  <form class="register" ng-submit='auth.register(userPassReg)'>
     <label for="username">Username: </label>
-    <input type="text" name="username" placeholder="type username here" ng-model='userPass.username'>
+    <input type="text" name="username" placeholder="type username here" ng-model='userPassReg.username'>
     <label for="password">Password: </label>
-    <input type="password" name="password" placeholder="type password here" ng-model='userPass.password'>
+    <input type="password" name="password" placeholder="type password here" ng-model='userPassReg.password'>
     <button type="submit" name="register">Register</button>
   </form>
 
-  <form class="login" ng-submit='auth.login(userPass)'>
+  <form class="login" ng-submit='auth.login(userPassLog)'>
     <label for="username">Username: </label>
-    <input type="text" name="username" placeholder="type username here" ng-model='userPass.username'>
+    <input type="text" name="username" placeholder="type username here" ng-model='userPassLog.username'>
     <label for="password">Password: </label>
-    <input type="password" name="password" placeholder="type password here" ng-model='userPass.password'>
+    <input type="password" name="password" placeholder="type password here" ng-model='userPassLog.password'>
     <button type="submit" name="login">Log In</button>
   </form>
 </div>

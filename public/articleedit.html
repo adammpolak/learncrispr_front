@@ -1,0 +1,17 @@
+<h2>Edit Article</h2>
+
+<form class="editArticleForm" ng-submit="articles.updateArticle()">
+  <label for="title">Title: </label>
+  <input type="text" name="title" ng-model='articles.activeArticle.title'>
+
+  <label for="description">Description: </label>
+  <input type="text" name="description" ng-model='articles.activeArticle.description'>
+
+  <label for="abstract">Abstract: </label>
+  <input type="text" name="abstract" ng-model='articles.activeArticle.abstract'>
+
+  <label for="article url">Article Url: </label>
+  <input type="text" name="article url" ng-model='articles.activeArticle.article_url'>
+
+  <button type="submit">Save</button>
+</form>

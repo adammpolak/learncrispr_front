@@ -2,7 +2,7 @@
   angular.module('learnCRISPR', ['ui.router']).config(MainRouter);
   MainRouter.$inject = ['$stateProvider', '$urlRouterProvider', '$locationProvider'];
   function MainRouter($stateProvider, $urlRouterProvider, $locationProvider) {
-    $urlRouterProvider.otherwise('/index');
+    $urlRouterProvider.otherwise('/');
 
     $stateProvider
     .state('landing', {
@@ -11,10 +11,32 @@
       controller: 'AuthCtrl',
       controllerAs: 'auth'
     })
-    .state('allArticles', {
+    .state('articles', {
       url: '/articles',
       templateUrl: '/articles.html',
-      controller:
+      controller: 'articlesController',
+      controllerAs: 'articles'
+    })
+    .state('new article', {
+      url: '/articles/new',
+      templateUrl: '/articlenew.html',
+      controller: 'articlesController',
+      controllerAs: 'articles'
+    })
+    .state('editArticle', {
+      url: '/articles/edit',
+      params: {
+        article: null
+      },
+      templateUrl: '/articleedit.html',
+      controller: 'articlesController',
+      controllerAs: 'articles'
+    })
+    .state('article', {
+      url: '/articles/article',
+      templateUrl: '/article.html',
+      controller: 'articlesController',
+      controllerAs: 'articles'
     })
   }
 })()
