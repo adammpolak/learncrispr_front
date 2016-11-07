@@ -29,6 +29,20 @@ nav a {
   margin-left: 35px;
 }
 
+.labeldescriptionedit {
+  margin-top: 40px;
+}
+
+.descriptioninput {
+  width: 500px;
+  height: 100px;
+}
+
+.abstractinput {
+  width: 500px;
+  height: 300px;
+}
+
 .registerbutton {
   width: 100px;
   display: block;
@@ -58,7 +72,9 @@ nav a {
   margin: auto;
   margin-top: 20px;
   border-radius: 10px;
+  padding: 15px;
 }
+
 
 .articlepreview h3 {
   text-align: center;
@@ -70,4 +86,10 @@ nav a {
   width: 260px;
   height: 40px;
   border-radius: 10px;
+}
+
+.savebutton {
+  display: block;
+  margin: auto;
+  width: 200px;
 }
