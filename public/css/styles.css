@@ -1,0 +1,73 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+nav {
+  float: right;
+}
+
+nav a {
+  margin: 20px 50px
+}
+
+.clear {
+  clear: both;
+}
+
+.landing {
+  margin: auto;
+  margin-top: 100px;
+  width: 300px;
+  border: 3px solid black;
+  border-radius: 5px;
+
+}
+
+.labeldescription {
+  display: block;
+  margin: auto;
+  margin-left: 35px;
+}
+
+.registerbutton {
+  width: 100px;
+  display: block;
+  margin: 0 auto;
+}
+
+.loginbutton {
+  width: 100px;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.landing h3 {
+  text-align: center;
+}
+.registerform {
+  margin: auto; 
+  display: inline;
+}
+
+.articlepreview {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+  width: 50%;
+  margin: auto;
+  margin-top: 20px;
+  border-radius: 10px;
+}
+
+.articlepreview h3 {
+  text-align: center;
+}
+
+.addarticle {
+  margin: auto;
+  display: block;
+  width: 260px;
+  height: 40px;
+  border-radius: 10px;
+}

@@ -1,17 +1,33 @@
-<div class="">
-  <form class="register" ng-submit='auth.register(userPassReg)'>
-    <label for="username">Username: </label>
-    <input type="text" name="username" placeholder="type username here" ng-model='userPassReg.username'>
-    <label for="password">Password: </label>
-    <input type="password" name="password" placeholder="type password here" ng-model='userPassReg.password'>
-    <button type="submit" name="register">Register</button>
+<div class="landing">
+  <form class="registerform" ng-submit='auth.register(userPassReg)'>
+    <div class="labeldescription">
+      <label for="username">Username: </label>
+      <input type="text" name="username" placeholder="type username here" ng-model='userPassReg.username'>
+    </div>
+    <br>
+    <div class="labeldescription">
+
+      <label for="password">Password: </label>
+      <input type="password" name="password" placeholder="type password here" ng-model='userPassReg.password'>
+    </div>
+    <br>
+    <button type="submit" name="register" class='registerbutton'>Register</button>
   </form>
 
-  <form class="login" ng-submit='auth.login(userPassLog)'>
-    <label for="username">Username: </label>
-    <input type="text" name="username" placeholder="type username here" ng-model='userPassLog.username'>
-    <label for="password">Password: </label>
-    <input type="password" name="password" placeholder="type password here" ng-model='userPassLog.password'>
-    <button type="submit" name="login">Log In</button>
+  <h3 id='or'>Or...</h3>
+
+  <form class="loginform" ng-submit='auth.login(userPassLog)'>
+    <div class="labeldescription">
+
+      <label for="username">Username: </label>
+      <input type="text" name="username" placeholder="type username here" ng-model='userPassLog.username'>
+    </div>
+    <br>
+    <div class="labeldescription">
+      <label for="password">Password: </label>
+      <input type="password" name="password" placeholder="type password here" ng-model='userPassLog.password'>
+    </div>
+    <br>
+    <button type="submit" name="login" class='loginbutton'>Log In</button>
   </form>
 </div>
